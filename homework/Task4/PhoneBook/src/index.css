@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #fff5f5, #ffe5e5, #ffd6d6);
+  min-height: 100vh;
+  color: #2b2b2b;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+
+  box-shadow: 0 10px 30px rgba(255, 0, 0, 0.15);
+  border: 1px solid rgba(255, 0, 0, 0.1);
+
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+  color: #c1121f;
+  margin-bottom: 15px;
+  font-size: 26px;
+}
+
+h2 {
+  color: #e5383b;
+  margin: 15px 0 10px;
+  font-size: 18px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 10px;
+
+  border: 1px solid #ffb3b3;
+  border-radius: 10px;
+
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #e5383b;
+  box-shadow: 0 0 8px rgba(229, 56, 59, 0.3);
+}
+
+/* زر */
+button {
+  background: linear-gradient(135deg, #e5383b, #c1121f);
+  color: white;
+  border: none;
+
+  padding: 10px 15px;
+  border-radius: 10px;
+
+  cursor: pointer;
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(193, 18, 31, 0.3);
+}
+
+/* قائمة */
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+li {
+  background: #fff0f0;
+  margin: 8px 0;
+  padding: 10px;
+
+  border-left: 5px solid #e5383b;
+  border-radius: 8px;
+
+  transition: 0.2s;
+}
+
+li:hover {
+  transform: translateX(5px);
+  background: #ffe3e3;
+}
+
+/* أنيميشن */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
